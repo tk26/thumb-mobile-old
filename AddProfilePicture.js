@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Body, Button } from 'native-base';
-import ThumbHeader from './ThumbHeader';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class AddProfilePicture extends Component {
     render() {
         return (
             <Container>
-                <ThumbHeader title = { "Add Profile Picture" } />
                 <Content style = { { padding: 20 } }>
                     <Card style = { { padding: 20 } }>
                         

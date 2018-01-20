@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { Image, Dimensions } from 'react-native';
 import { Container, Header, Content, Text, List, ListItem, Left, Right } from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import ThumbHeader from './ThumbHeader';
 
 export default class ProfileProgress extends Component {
+
     render() {
+        const { navigate } = this.props.navigation;
+
         return (
             <Container>
-                <ThumbHeader title = { "Profile Progress" } />
                 <Content>
                     <Image
                         style = { 
@@ -33,7 +34,7 @@ export default class ProfileProgress extends Component {
                         
                         <ListItem>
                             <Left>
-                                <Text>
+                                <Text onPress={() => navigate('AddProfilePicture')}>
                                     Add a profile picture
                                 </Text>
                             </Left>

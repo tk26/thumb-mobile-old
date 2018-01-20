@@ -175,6 +175,12 @@ export default class Signup extends Component {
                             &nbsp;about using thumb
                         </Text>
                     </View>
+
+                    <Button rounded success style = { { alignSelf: 'center' } } onPress={() => navigate('ProfileProgress')}>
+                            <Text>
+                                Profile Progress
+                            </Text>
+                        </Button>
                 </Content>
             </Container>
         );
